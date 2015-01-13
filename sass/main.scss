@@ -1,0 +1,145 @@
+@import "resets.scss";
+@import "mixins.scss";
+@import "layout.scss";
+@import "theme.scss";
+
+/*!////////////////////////////////////////////////
+// MODULES
+/////////////////////////////////////////////////*/
+header[role=banner]{
+	background-color: $primaryColor;
+	position: relative;
+}
+.branding__top{
+	padding: 20px 2.5%;
+}
+.branding__office,
+.branding__phone{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
+	p{
+		font-family: $headlineFont;
+		font-weight: 400;
+		font-size: em(16px,$font-size);
+		color: #fff;
+		b{
+			font-weight: 400;
+			color: $tertiaryColor;
+			text-transform: uppercase;
+		}
+	}
+}
+.header__contact{
+	float: right;
+}
+nav[role=navigation]{
+	border-top: 2px solid $color1;
+	border-bottom: 2px solid $color1;
+	text-align: center;
+	ul{
+		display: inline-block;
+	}
+	li{
+		display: inline-block;
+		a{
+			position: relative;
+			display: inline-block;
+			font-family: $headlineFont;
+			font-weight: 400;
+			font-size: em(18px,$font-size);
+			color: #fff;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin: 0 20px;
+			padding: 15px 0;
+		}
+		a:after{
+			content: "";
+			position: absolute;
+			right: -24px;
+			height: 20px;
+			border-right: 2px solid $color1;
+		}
+	}
+	.button--cta{
+		display: inline-block;
+		background-color: $tertiaryColor;
+		font-family: $headlineFont;
+		font-weight: 400;
+		font-size: em(18px,$font-size);
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 15px;
+		span{
+			font-size: 1.4em;
+			line-height: 0em;
+		}
+	}
+}
+.hero{
+	li{
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+}
+.slider__info{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -100px;
+	text-align: center;
+	a{
+		font-family: $headlineFont;
+		font-size: em(20px, $font-size);
+		color: $tertiaryColor;
+		line-height: 2.4em;
+		text-transform: uppercase;
+		text-decoration: none;
+		span{
+			font-size: 1.4em;
+			line-height: 0em;
+		}
+	}
+}
+.service__top{
+	font-family: $headlineFont;
+	font-size: em(36px, $font-size);
+	color: #fff;
+	text-transform: uppercase;
+}
+.service__bottom{
+	font-family: $headlineFont;
+	font-size: em(105px, $font-size);
+	font-weight: 700;
+	color: #fff;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.services__home{
+	min-height: 300px;
+	background-color: $secondaryColor;
+	h2{
+		font-family: $headlineFont;
+		font-size: em(18px, $font-size);
+		font-weight: 400;
+		color: #fff;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 20px 0;
+	}
+}
+
+
+/*!////////////////////////////////////////////////
+// STATES
+/////////////////////////////////////////////////*/
+
+
+
+@import "shame.scss";
+@import "helpers.scss";

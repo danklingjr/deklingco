@@ -1,0 +1,16 @@
+/*!////////////////////////////////////////////////
+// THEME
+/////////////////////////////////////////////////*/
+$font-size: 16px;
+@function em($px, $base: $font-size){
+	@return ($px / $base) * 1em;
+}
+
+$primaryColor: #6d1616; //maroon
+$secondaryColor: #161d21; //navy
+$tertiaryColor: #ffcc00; //yellow
+$color1: #5d1313; //dark maroon
+$color2: #858585; //gray
+
+$headlineFont: 'Oswald', sans-serif;
+$bodyFont: 'Droid Sans', sans-serif;
