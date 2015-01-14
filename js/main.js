@@ -1,1 +1,1 @@
-
+$(".nav").stickyPanel();

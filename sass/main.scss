@@ -9,6 +9,7 @@
 header[role=banner]{
 	background-color: $primaryColor;
 	position: relative;
+	height: 170px;
 }
 .branding__top{
 	padding: 20px 2.5%;
@@ -34,14 +35,17 @@ header[role=banner]{
 	float: right;
 }
 nav[role=navigation]{
+	background-color: $primaryColor;
 	border-top: 2px solid $color1;
 	border-bottom: 2px solid $color1;
 	text-align: center;
+	z-index: 3;
 	ul{
 		display: inline-block;
 	}
 	li{
 		display: inline-block;
+		position: relative;
 		a{
 			position: relative;
 			display: inline-block;
@@ -53,14 +57,20 @@ nav[role=navigation]{
 			text-decoration: none;
 			margin: 0 20px;
 			padding: 15px 0;
+			&:hover,
+			&:focus{
+				color: $tertiaryColor;
+			}
 		}
-		a:after{
-			content: "";
-			position: absolute;
-			right: -24px;
-			height: 20px;
-			border-right: 2px solid $color1;
-		}
+		
+	}
+	li:after{
+		content: "";
+		position: absolute;
+		top: 15px;
+		right: -3px;
+		height: 20px;
+		border-right: 2px solid $color1;
 	}
 	.button--cta{
 		display: inline-block;
@@ -121,8 +131,8 @@ nav[role=navigation]{
 }
 
 .services__home{
-	min-height: 300px;
 	background-color: $secondaryColor;
+	padding: 0 2.5% 20px;
 	h2{
 		font-family: $headlineFont;
 		font-size: em(18px, $font-size);
@@ -132,6 +142,92 @@ nav[role=navigation]{
 		text-align: center;
 		padding: 20px 0;
 	}
+}
+.service__home{
+	figure{
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+	p,li{
+		font-family: $bodyFont;
+		color: #fff;
+		line-height: 1.6em;
+	}
+	p{
+		margin-top: 20px;
+	}
+	ul{
+		margin-top: 20px;
+	}
+}
+.service__title{
+	position: absolute;
+	bottom: 20px;
+	left: -10px;
+	h3{
+		background-color: #fff;
+		font-family: $headlineFont;
+		font-size: em(18px, $font-size);
+		color: #000;
+		text-transform: uppercase;
+		padding: 10px 15px;
+	}
+	a{
+		display: inline-block;
+		background-color: $tertiaryColor;
+		font-family: $headlineFont;
+		font-size: em(14px, $font-size);
+		font-weight: 700;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 10px 15px;
+	}
+}
+.capabilities__title{
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.capabilities__list{
+	margin-top: 0px !important;
+	li{
+		list-style: none;
+		color: #858585;
+	}
+}
+.footer{
+	background-color: $primaryColor;
+	padding: 40px 2.5%;
+	h2,p{
+		color: #fff;
+	}
+	h2{
+		font-family: $headlineFont;
+		font-size: em(24px, $font-size);
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+	p{
+		font-family: $bodyFont;
+		font-size: em(20px, $font-size);
+		font-weight: 400;
+		line-height: 1.6em;
+		margin-bottom: 60px;
+		a{
+			color: $tertiaryColor;
+		}
+	}
+}
+.copyright{
+	background-color: $color1;
+	font-family: $bodyFont;
+	font-size: em(16px, $font-size);
+	color: #fff;
+	text-align: center;
+	padding: 20px;
 }
 
 
