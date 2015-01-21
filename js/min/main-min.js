@@ -1,1 +1,1 @@
-$(".nav").stickyPanel();
+$(".nav").stickyPanel(),$(".flexslider").flexslider();

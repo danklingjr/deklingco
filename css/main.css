@@ -441,6 +441,8 @@ nav[role=navigation] {
     nav[role=navigation] .button--cta span {
       font-size: 1.4em;
       line-height: 0em; }
+    nav[role=navigation] .button--cta:hover, nav[role=navigation] .button--cta:focus {
+      background-color: #fff; }
 
 .hero li {
   position: relative; }
@@ -524,6 +526,9 @@ nav[role=navigation] {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px 15px; }
+    .service__title a:hover, .service__title a:focus {
+      background-color: #000;
+      color: #fff; }
 
 .capabilities__title {
   text-transform: uppercase;
@@ -554,6 +559,10 @@ nav[role=navigation] {
     margin-bottom: 60px; }
     .footer p a {
       color: #ffcc00; }
+
+.map,
+.contact__info {
+  margin-bottom: 0 !important; }
 
 .copyright {
   background-color: #5d1313;
